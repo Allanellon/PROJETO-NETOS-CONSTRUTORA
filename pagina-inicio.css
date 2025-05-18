@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'AlumniSans-Thin';
+  src: url("./DESIGN/fontes/fonts-alumni/ttf/AlumniSans-Thin.ttf") format('truetype');
+}
+/*design da fonte do menu*/
+.menu-letras{
+    font-family: AlumniSans-Thin;
+    font-size: 30px;
+    color: white;
+    margin-top: 6px;
+  }
+/*RESPONSIVIDADE DO MENU DO HEADER*/
+  @media (max-width: 768px) {
+  .menu-letras {
+    font-size: 18px;
+    margin-top: 15px;
+  }}
+
+/*estrutura do menu que está no header*/
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    background-color: #0F328A;
+    height: 50px;
+}
+/*removem os espaços padrão que os navegadores aplicam*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* bloqueia o scroll horizontal */
+}
+
+.relativo{
+    background: url("./DESIGN/imagens-ini/foto1-azul.png")
+              center/cover no-repeat;
+    position: relative;
+    padding: 460px;       
+    display: flex;
+    flex-direction: column;        
+    align-items: center;           
+    text-align: center;
+    box-sizing: border-box;
+}
+.imagem1{
+  width: 100vw;         
+  height: auto;         
+  display: block;        
+}
+.logo{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;    
+    transform: translate(-50%,-50%);
+}
+@font-face {
+  font-family: 'Geologica-Bold';
+  src: url("./DESIGN/fontes/fonts-geologica//Geologica-Bold.ttf") format('truetype');
+}
+.mensag-header{
+    font-family: 'Geologica-Bold';
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    margin-top: 40px;
+}
+
+@font-face {
+  font-family: 'Geologica-Thin';
+  src: url("./DESIGN/fontes/fonts-geologica//Geologica-Thin.ttf") format('truetype');
+}
+
+button{
+    width: 340px;
+    font-size: 23px;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: "Geologica-Thin";
+    color: white;
+    background-color: #0F328A;
+    border-width: 5px;
+    border-color: #0F328A;
+    border-style: solid;
+    border-radius: 8px;
+}
