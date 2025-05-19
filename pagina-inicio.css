@@ -2,10 +2,31 @@
   font-family: 'AlumniSans-Thin';
   src: url("./DESIGN/fontes/fonts-alumni/ttf/AlumniSans-Thin.ttf") format('truetype');
 }
+
+#inicio{}
+#serviços{}
+#quem{}
+#projetos{}
+#orça{}
+
+.menu ul{
+  list-style: none;   
+  display: flex;
+  justify-content: center;
+  margin-left:10px;
+  gap: 40px;
+  flex-wrap: wrap; 
+ }
+   
+nav a:hover{
+    color: #527ce8;}
+
 /*design da fonte do menu*/
 .menu-letras{
     font-family: AlumniSans-Thin;
+    font-weight: bold;
     font-size: 30px;
+    text-decoration: none; 
     color: white;
     margin-top: 6px;
   }
@@ -14,16 +35,21 @@
   .menu-letras {
     font-size: 18px;
     margin-top: 15px;
-  }}
+    padding: 5px;
+  }
+
+}
 
 /*estrutura do menu que está no header*/
 .menu-header{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 40px;
+    align-items: center;
     background-color: #0F328A;
     height: 50px;
+    padding: 0 10px;
+
 }
 /*removem os espaços padrão que os navegadores aplicam*/
 *{
@@ -96,4 +122,32 @@ button{
     border-color: #0F328A;
     border-style: solid;
     border-radius: 8px;
+    transition: all 0.3s ease;
+}
+button:hover {
+  color: white;
+  transform: translate(-50%) scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ns{
+  font-family: "Geologica-Bold";
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: #214297;
+}
+
+.icones{
+  width: 90px;
+  height: auto;
+}
+.icones-grids{
+  display: grid;
+  grid-auto-flow: row; 
+  grid-template-columns: repeat(3, 1fr); 
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
