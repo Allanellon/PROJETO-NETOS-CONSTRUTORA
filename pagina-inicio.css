@@ -130,24 +130,87 @@ button:hover {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-.ns{
+/*info de serviços */
+.sub{
   font-family: "Geologica-Bold";
-  font-style: italic;
   text-align: center;
   margin-top: 40px;
   font-size: 30px;
   color: #214297;
 }
-
-.icones{
+.italic{
+  font-style: italic;
+}
+ .icones{
   width: 90px;
   height: auto;
 }
-.icones-grids{
-  display: grid;
-  grid-auto-flow: row; 
-  grid-template-columns: repeat(3, 1fr); 
-  justify-content: center;
+
+@font-face {
+  font-family: "Geologica-Regular";
+  src: url(./DESIGN/fontes/fonts-geologica/Geologica-Regular.ttf);
+}
+.icones-grids {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  margin-top: 85px;
+  flex-wrap: wrap; 
+  text-align: center; 
+}
+
+.item-servico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; 
+}
+
+.item-servico h3 {
+  color: #214297;
+  font-family: "Geologica-Regular";
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+
+}
+@font-face {
+  font-family: "Geist-Mono";
+  src: url(./DESIGN/fontes/geist-mono/GeistMono-Regular.ttf);
+}
+
+.item-servico h6{
+  color: #636E89;
+  font-family: "";
+  margin-top: 12px;
+  font-size: 14px;
+  font-family: "Geist-Mono";
+}
+@font-face {
+  font-family: "GeistMono-Thin";
+  src: url(./DESIGN/fontes/geist-mono/GeistMono-Thin.ttf);
+}
+.pr{
+  color: #214297;
+  font-family: "GeistMono-Thin";
+  margin-top: 12px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bolder;
+
+}
+.espaco{
+  margin-top: ;
+}
+.imagens-projetos{
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;  
+}
+ .imagens-projetos img{
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 8px 15px #214297;
 }
