@@ -12,7 +12,7 @@ header{
 }
 header h1{
     margin: 0;
-    position:absolute;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -38,8 +38,11 @@ html, body{
 }
 .texto-sobreposto{
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     text-align:center;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform:translate(-50%,-50%);
     font-size: 15px;
