@@ -198,9 +198,7 @@ button:hover {
   text-align: center;
   font-weight: bolder;
 
-}
-.espaco{
-  margin-top: ;
+
 }
 .imagens-projetos{
   margin-top: 70px;
@@ -209,8 +207,27 @@ button:hover {
   align-items: flex-start;
   flex-wrap: wrap;  
 }
- .imagens-projetos img{
-  width: 300px;
-  height: auto;
+
+.img1{
+  width: 450pxpx;
+  height: 300px;
   box-shadow: 0px 8px 15px #214297;
+
+}
+.img2{
+  width: 450pxpx;
+  height: 300px;
+  box-shadow: 0px 8px 15px #214297;
+
+}
+.img3{
+  width: 250px;
+  height: 300px;
+  box-shadow: 0px 8px 15px #214297;
+
+} 
+
+.espaco{
+  margin-bottom: 50px;
+
 }
