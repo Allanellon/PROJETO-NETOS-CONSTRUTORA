@@ -18,6 +18,7 @@ A Construtora Netos é especializada em soluções completas para construção c
 
 - HTML5
 - CSS3 
+- JavaScript
 
 
 
