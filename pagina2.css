@@ -1,0 +1,38 @@
+header{
+    background-color: #214297;
+    color: #ffffff;
+    border: none;
+    padding-top:10px;
+    margin:0px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+header h1{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-width: 80px;
+    margin-right: 450px;
+}
+#imagem2{
+    max-width: 380px;
+    margin-left:50px;;
+}
+.caixa-pesquisa {
+    position: relative;
+    display: inline-block;
+}
+.caixa-pesquisa img {
+    width: 100%;
+    display: block;
+}
