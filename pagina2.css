@@ -110,9 +110,9 @@ html, body{
   position: relative;       
   z-index: 1;               
   text-align: right;
-  margin: 0 -100px auto;
-  font-size: clamp(14px, 1.2vw, 18px);
-  line-height: 1.6;
+  margin: 0 10px auto;
+  font-size: clamp(12px, 1.2vw, 16px);
+  line-height: 1.4;
 }
 
 .faixa-container{
