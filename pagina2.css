@@ -22,31 +22,69 @@ html, body{
 }
 #logo{
     max-width: 80px;
-    margin-right: 450px;
+    margin-left: 5%;
 }
 #imagem2{
     width: 75%;
-    max-width: 350px;
-    margin-left: 20px;
+    max-width: 450px;
+    margin-left: 60px;
 }
 .comentario{
     position: relative;
-    width: 80%;
+    width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
+    max-width: 500px;
 }
 .comentario img{
     width: 100%;
     height: auto;
     display: block;
+    
 }
 .comentario-texto{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-95%);
-    width: 80%;
+    width: 90%;
     font-size: clamp(13px,2vw,16px);
     text-align: center;
     line-height: 1.4;
 }
+.fundo3{
+    top: 500px;
+    z-index: -2;
+    transform:translateX(-50%) rotate(-8deg);
+}
+#mensagem {
+  position: relative;       
+  z-index: 1;               
+  text-align: right;
+  margin: 0 20px;
+  font-size: clamp(14px, 1.2vw, 18px);
+  line-height: 1.6;
+}
+
+.faixa-container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 20px;
+    overflow: visible;
+
+}
+.faixa {
+         
+    left: 50%;               
+    transform: translateX(-13%); 
+    width: 130%;            
+    display: block;     
+    margin: 0 auto;      
+    transform-origin: center;
+    margin-top: -100px;
+    z-index: -1;
+}
+
+
+ 
