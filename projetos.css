@@ -30,7 +30,11 @@ header {
 }
 
 .logo {
-  width: 40px;
+  width: 50px;
+  max-width: 400px;    
+  height: auto;        
+  border-radius: 10px; 
+  display: block; 
 }
 
 .menu-icon {
@@ -103,9 +107,18 @@ h1 {
 }
 
 .card img {
-  width: 100%;
+  width: 35%;
   border-radius: 12px;
   margin-bottom: 0.5rem;
+}
+
+.card-projeto img {
+  width: 100%;         
+  max-width: 400px;    
+  height: auto;        
+  border-radius: 10px; 
+  display: block;
+  margin: 0 auto;      
 }
 
 .card h3 {
