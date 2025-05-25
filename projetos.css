@@ -1,3 +1,9 @@
+/* Fontes:
+   - Geologica: títulos e textos gerais
+   - Open Sans: botão principal
+   - Geist Mono: detalhes de projetos
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +11,8 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0d3b8a;
+  font-family: 'Geologica', sans-serif;
+  background-color: #214297;
   color: white;
   padding: 1rem;
 }
@@ -34,16 +40,17 @@ header {
 
 h1 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700; /* Geologica bold */
 }
 
 .cta {
   background-color: white;
-  color: #0d3b8a;
+  color: #214297;
   border: none;
   padding: 0.6rem 1rem;
   border-radius: 20px;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   cursor: pointer;
   margin-top: 0.5rem;
 }
@@ -56,6 +63,8 @@ h1 {
 .filtro p {
   margin-bottom: 1rem;
   font-size: 0.9rem;
+  font-family: 'Geologica', sans-serif;
+  font-weight: 400;
 }
 
 .filtros {
@@ -77,7 +86,7 @@ h1 {
 
 .filtro-btn.ativo {
   background-color: white;
-  color: #0d3b8a;
+  color: #214297;
 }
 
 .cards {
@@ -100,13 +109,13 @@ h1 {
 }
 
 .card h3 {
-  font-family: monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 1rem;
   margin-bottom: 0.3rem;
 }
 
 .card p {
-  font-family: monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 0.85rem;
 }
 
