@@ -9,6 +9,10 @@
 #projetos{}
 #orça{}
 
+
+.menu{ 
+   position: relative;
+}
 .menu ul{
   list-style: none;   
   display: flex;
@@ -30,17 +34,18 @@ nav a:hover{
     color: white;
     margin-top: 6px;
   }
-/*RESPONSIVIDADE DO MENU DO HEADER*/
-  @media (max-width: 768px) {
-  .menu-letras {
-    font-size: 18px;
-    margin-top: 15px;
-    padding: 5px;
-  }
-  
-  .menu ul{
-  font-size: 10px;
-}
+
+  /* Botão de hambuger para o menu no celular: */
+  .hamburger {
+  display: none;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
 }
 
 /*estrutura do menu que está no header*/
@@ -52,7 +57,7 @@ nav a:hover{
     background-color: #0F328A;
     height: 50px;
     padding: 0 10px;
-
+    
 }
 /*removem os espaços padrão que os navegadores aplicam*/
 *{
@@ -133,8 +138,18 @@ button:hover {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
+
+
+
 /*info de serviços */
 .sub{
+  font-family: "Geologica-Bold", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+  color: #214297;
+}
+.sub2{
   font-family: "Geologica-Bold", sans-serif;
   text-align: center;
   margin-top: 40px;
@@ -191,6 +206,7 @@ button:hover {
 @font-face {
   font-family: "GeistMono-Thin";
   src: url(./DESIGN/fontes/geist-mono/GeistMono-Thin.ttf);
+
 }
 .pr{
   color: #214297;
@@ -199,8 +215,6 @@ button:hover {
   font-size: 15px;
   text-align: center;
   font-weight: bolder;
-
-
 }
 .imagens-projetos{
   margin-top: 70px;
@@ -396,3 +410,122 @@ nav {
     margin: 0 auto 20px;
   }
 }
+/************************************/
+body, html {
+  margin: 0;
+  padding: 0;
+}
+/*RESPONSIVIDADE*/
+  @media (max-width: 768px) {
+  /* HEADER */
+  .menu-letras {
+    display: block;
+    padding: 15px;
+    font-size: 24px;
+  }
+  .hamburger {
+    display: block; /* aparece só no celular */
+  }
+  .menu ul{
+    display: none;
+    flex-direction: column;
+    background-color: #11007c;
+    position: absolute;
+    top: 50px; 
+    right: -150px;
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    border-radius: 12px;
+  }
+   .menu ul.active {
+    display: flex;
+  }
+  .menu-header {
+    height: 90px;
+    width: 1500px;
+    position: fixed;
+    z-index: 900;
+  }
+  .mensag-header{
+    top: 60%;
+}
+button{
+      width: 400px;
+      height: auto;
+    font-size: 26px;
+  border-radius: 13px;
+}
+/* PARTE DE INFO */
+.sub{
+white-space: nowrap;
+margin-top: 60px;
+font-size: 50px;
+margin-left: 250px;
+justify-content: center;
+}
+
+.icones-grids {
+  display: flex;
+ flex-direction: column; 
+ text-align: center;
+ gap: 90px;
+ margin-left: 350px;
+}
+.icones{
+  width: 200px;
+  height: auto;
+}
+.item-servico h3 {
+  font-size: 39px;
+    white-space: nowrap;
+
+}
+.item-servico h6 {
+  font-size: 27px;
+  white-space: nowrap;
+}
+.sub2{
+white-space: nowrap;
+margin-top: 100px;
+font-size: 50px;
+margin-left: 200px;
+justify-content: center;
+}
+.pr{
+  margin-top: 12px;
+  font-size: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 400px;
+}
+.imagens-projetos{
+  margin-top: 100px;
+  gap: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 300px;
+}
+
+.img1, .img2{
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  box-shadow: 0px 8px 15px #214297;
+
+}
+.img3{
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+} 
+
+/* footer */
+footer{
+  width: 920px;
+}
+  }
+/************************************/

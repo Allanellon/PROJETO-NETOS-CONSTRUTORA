@@ -12,6 +12,8 @@
 <!--CABEÇALHO-MENU-->
 <header class="menu-header">
     <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Botão de hambuger oculto no pc -->
+
         <ul>
     <li><a href="#inicio" class="menu-letras">INÍCIO</a></li>
     <li><a href="#serviços"  class="menu-letras">SERVIÇOS</a></li>
@@ -58,7 +60,7 @@
 </section>
 
 <!--PROJETOS EM DESTAQUE-->
-<h3 class="sub ">Projetos em Destaque</h3>
+<h3 class="sub2 ">Projetos em Destaque</h3>
 <h3 class="pr">Veja como transformamos ideias em espaços reais e funcionais.</h3>
 <div class="imagens-projetos">
 <img src="./DESIGN/imagens-ini/igreja.png" class="img1">
@@ -129,6 +131,14 @@
   </a>
 
 </footer>
+
+<!-- JAVA SCRIPT DO BOTAO DE MENU (HAMBURGER) -->
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu ul");
+    menu.classList.toggle("active");
+  }
+</script>
 
 </body>
 </html>
