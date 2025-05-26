@@ -15,6 +15,46 @@ header h1{
     left: 50%;
     transform: translateX(-50%);
 }
+
+.menu{
+  position: relative;
+}
+.menu ul{
+  list-style: none;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 90%;
+  right: 40%;
+  margin-top: 90px;
+  margin-right: 90px;
+  gap: 10px;
+  z-index: 9999;
+  flex-wrap: wrap; 
+ }
+ nav a:hover{
+  color: #527ce8;
+ }
+ .hamburguer{
+  display: block;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+}
+.hamburguer span{
+  width: 39px;
+  display: block;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
 html, body{
     margin: 0;
     padding: 0;
@@ -23,59 +63,6 @@ html, body{
     max-width: 80px;
     margin-left: 5%;
     margin-top: 20px;
-}
-.menu-hamburguer {
-  width: 30px;
-  height: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  margin-right: 5%;
-}
-.menu-hamburguer span {
-  display: block;
-  height: 4px;
-  background-color: white; 
-  border-radius: 2px;
-}
-#menu-lateral {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 200px;
-  height: 100vh;
-  background-color: #214297;
-  color: white;
-  padding-top: 80px;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-  transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 1000;
-}
-
-#menu-lateral ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-#menu-lateral li {
-  margin: 20px 0;
-}
-
-#menu-lateral a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#menu-lateral a:hover {
-  text-decoration: underline;
-}
-.menu-aberto {
-  transform: translateX(0%);
 }
 #imagem2{
     width: 75%;

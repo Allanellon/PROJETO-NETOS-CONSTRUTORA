@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="pagina2.css">
 </head>
 <body>
+
+  
   <header>
     <img src="assets/logo-vazio.png" id="logo" alt="Logo">
     <h1>SERVIÇOS</h1>
-    <div class="menu-hamburguer" onclick="toggleMenu()">
+    <nav class="menu">
+      <div class="hamburguer" onclick="toggleMenu()">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <nav id="menu-lateral">
+
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="servicos.html">Serviços</a></li>
@@ -50,7 +53,15 @@
     <p>Especialistas em reformas residenciais. Valorizamos sua casa com soluções modernas, seguras e sob medida para cada ambiente — da cozinha à área externa,<br> cuidamos de cada detalhe com eficiência e bom gosto.</p>
     </div>
   </main>
+  
+<!-- JAVA SCRIPT DO BOTAO DE MENU (HAMBURGER) -->
 
-  <script src="menu.js"></script>
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu ul");
+    menu.classList.toggle("active");
+  }
+</script>
+
 </body>
 </html>
