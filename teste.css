@@ -3,7 +3,7 @@ header{
     color: #ffffff;
     border: none;
     padding-top:10px;
-    width: 105%;
+    width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
@@ -41,7 +41,7 @@ body {
   align-items: center; 
   position: absolute;
   top: 20px; 
-  right: 110px;  
+  right: 20px;  /* Ajustado de 110px */  
   width: 240px; 
   height: auto;
   padding: 20px 0;
@@ -97,7 +97,9 @@ html, body{
 #imagem2{
     width: 75%;
     max-width: 450px;
-    margin-left: 60px;
+    display: block; /* Ensure it's a block element for margin auto */
+    margin-left: auto;
+    margin-right: auto;
 }
 .comentario{
     position: relative;
@@ -189,7 +191,7 @@ footer {
   font-size: 13px;
   line-height: 1.4;
   color: rgba(193, 193, 188, 0.84);
-  margin-top: -1px;
+  margin-top: -18px;
   margin-left: 60px;
 }
 
@@ -240,7 +242,7 @@ nav {
 .icones-redes {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px; /* Aumentado de 15px */
 }
 .footer-img {
   width: 30px;
@@ -266,7 +268,7 @@ nav {
   z-index: 1;
   width: 80%;
   max-width: 680px;
-  margin: 280px auto;
+  margin: 100px auto; /* Reduzido de 280px auto */
   display: block;
   border-radius: 40px;
 }
@@ -285,12 +287,18 @@ nav {
 
   /* footer */
 footer{
-  width: 920px;
+  width: 100%; /* Ajustado de 920px */
   grid-template-columns: 1fr;
   text-align: center;
+  gap: 40px; /* Adicionado para espaçamento vertical */
+  padding-top: 40px; /* Adicionado padding superior */
+  padding-bottom: 40px; /* Adicionado padding inferior */
 }
 .netos-logo{
-  width: 400px;
+  width: auto; /* Ajustado de 400px */
+  max-width: 80%; /* Adicionado para flexibilidade */
+  margin-left: auto; /* Adicionado para centralizar */
+  margin-right: auto; /* Adicionado para centralizar */
   position: relative;
   height: auto;
 }
@@ -331,3 +339,112 @@ footer{
 }
 
  
+
+/* FOOTER - Media Query Adjustments (Corrections) */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px; /* Ajustado padding */
+    display: flex; /* Mudado para flexbox */
+    flex-direction: column; /* Empilhar verticalmente */
+    align-items: center; /* Centralizar itens */
+    gap: 30px; /* Espaçamento entre seções (ajustado de 40px) */
+    width: 100%; /* Garantir largura total */
+    box-sizing: border-box; /* Incluir padding na largura */
+    /* Removido grid-template-columns e text-align: center herdados */
+  }
+
+  /* Coluna 1: Logo */
+  footer > div:nth-of-type(1) { /* Seleciona a div do logo */
+    text-align: center;
+    margin-bottom: 0; /* Removido margin-bottom extra, gap cuida disso */
+    width: 100%; /* Garantir que o container ocupe a largura */
+  }
+
+  .netos-logo {
+    width: auto !important; 
+    max-width: 200px !important; /* Reduzido max-width para mobile */
+    height: auto !important;
+    margin: 0 auto 10px auto !important; /* Centralizar e adicionar margem inferior */
+    display: block !important;
+    position: static !important; /* Resetar position relative se houver */
+  }
+
+  .mensagem-footer {
+    display: none !important; /* Mantido oculto */
+  }
+
+  /* Coluna 2: Menu */
+  footer nav {
+    text-align: center;
+    width: 100%; /* Ocupar largura */
+    margin-bottom: 0; /* Removido margin-bottom extra */
+  }
+
+  .title {
+    font-size: 20px !important; /* Ajustado tamanho */
+    margin-bottom: 10px !important;
+  }
+
+  .lista-footer {
+    gap: 10px !important; /* Ajustado espaçamento */
+    align-items: center;
+    padding: 0; /* Resetar padding se houver */
+    margin: 0; /* Resetar margin se houver */
+    display: flex; /* Garantir flex */
+    flex-direction: column; /* Garantir coluna */
+  }
+
+  .rodape-letras {
+    font-size: 16px !important; /* Ajustado tamanho */
+  }
+
+  /* Coluna 3: Contatos */
+  footer > div:nth-of-type(2) { /* Seleciona a div de contatos */
+     text-align: center;
+     width: 100%; /* Ocupar largura */
+     margin-top: 0; /* Resetar margin-top */
+  }
+
+  .title2 {
+    font-size: 20px !important; /* Ajustado tamanho */
+    margin-bottom: 10px !important;
+    margin-top: 0 !important; /* Removido margin-top anterior */
+  }
+
+  .number {
+    font-size: 18px !important; /* Ajustado tamanho */
+    margin-bottom: 15px !important;
+    margin-top: 0 !important;
+  }
+
+  .icones-redes {
+    gap: 25px !important; /* Ajustado gap */
+    margin-top: 0 !important; /* Removido margin-top anterior */
+    justify-content: center; /* Garantir centralização */
+    display: flex; /* Garantir flex */
+  }
+
+  .footer-img {
+    width: 35px !important; /* Ajustado tamanho */
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .footer-img2 {
+    width: 25px !important; /* Ajustado tamanho */
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+
+  /* Remover regras conflitantes da media query anterior se necessário */
+  /* Ex: remover width: 920px; grid-template-columns: 1fr; etc. */
+}
+
+/* Manter a media query para 480px se houver ajustes específicos */
+@media (max-width: 480px) {
+  .faixa-2 {
+    top: 600px; 
+  }
+  /* Adicionar outros ajustes específicos para 480px se necessário */
+}
+
