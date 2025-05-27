@@ -166,3 +166,24 @@ header {
   width: 100%;
   border-radius: 6px;
 }
+
+.voltar-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.btn-voltar {
+  background-color: #1f2c61;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #16315d;
+}
