@@ -96,8 +96,11 @@ html, body{
 }
 #imagem2{
     width: 75%;
+    display: block;
     max-width: 450px;
     margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .comentario{
     position: relative;
@@ -110,7 +113,6 @@ html, body{
     width: 100%;
     height: auto;
     display: block;
-    
     
 }
 .comentario-texto{
@@ -131,7 +133,18 @@ html, body{
   font-size: clamp(12px, 1.2vw, 16px);
   line-height: 1.4;
 }
-
+.imagem-destaque {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  max-width: 680px;
+  margin: 280px auto;
+  display: block;
+  border-radius: 40px;
+}
+.faixa-container p:last-of-type {
+  margin-bottom: 0;
+}
 .faixa-container{
     position: relative;
     max-width: 1200px;
@@ -139,13 +152,12 @@ html, body{
     padding: 150px 20px;
     overflow: visible;
     margin-top: -150px;
-
 }
 .faixa {
     position:absolute;   
     left: 50%;               
     transform: translateX(-50%); 
-    width: 123%;            
+    width: 100vh;    /*123%*/   
     display: block;     
     margin: 0 auto;      
     transform-origin: center;
@@ -261,37 +273,26 @@ nav {
   z-index: 1000;
 }
 
-.imagem-destaque {
-  position: relative;
-  z-index: 1;
-  width: 80%;
-  max-width: 680px;
-  margin: 280px auto;
-  display: block;
-  border-radius: 40px;
-}
-.faixa-container p:last-of-type {
-  margin-bottom: 0;
-}
+
 @media (max-width: 768px) {
   .faixa-2 {
     top: 800px; 
   }
 
-  .menu ul{
-  width: 220px; 
-  right: 40px;  
-  }
-
   /* footer */
 footer{
-  width: 920px;
-  grid-template-columns: 1fr;
-  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 150%;
+  box-sizing: border-box;
 }
 .netos-logo{
-  width: 400px;
+  width: 300px;
   position: relative;
+  align-items: center;
   height: auto;
 }
 .mensagem-footer{
@@ -322,12 +323,112 @@ footer{
   width: 95px;
   height: auto;
 }
-}
-
-@media (max-width: 480px) {
-  .faixa-2 {
-    top: 600px; 
-  }
-}
-
  
+
+main {
+  padding-top: 100px; /* ou um valor maior que a altura do header */
+}
+ 
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-width: 80px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.imagem-destaque{
+  top: -250px;
+}
+.imagem-destaque-2{
+  top: -450px;
+}
+.proximidade{
+  margin-top: -600px;
+}
+.faixa{
+  width: 80vh;
+  height: auto;
+}
+}
+@media (max-width: 480px) {
+ .faixa-2 {
+    top: 800px; 
+  }
+
+  /* footer */
+footer{
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 150%;
+  box-sizing: border-box;
+}
+.netos-logo{
+  width: 300px;
+  position: relative;
+  align-items: center;
+  height: auto;
+}
+.mensagem-footer{
+  display: none;
+}
+.title, .rodape-letras{
+  font-size: 25px;
+}
+.title2{
+  margin-top: 50px;
+  font-size: 25px;
+}
+.number{
+  font-size: 28px;
+  margin-top: -10px;
+}
+.footer-img {
+  width: 60px;
+  margin-top: 30px;
+  height: auto;
+}
+.footer-img2 {
+  margin-top: 30px;
+  width: 40px;
+  height: auto;
+}
+.footer-zap{
+  width: 95px;
+  height: auto;
+}
+ 
+
+main {
+  padding-top: 100px; /* ou um valor maior que a altura do header */
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-width: 80px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.imagem-destaque{
+  top: -150px;
+  
+}
+.imagem-destaque-2{
+  top: -250px;
+}
+.proximidade{
+  margin-top: -400px;
+}
+.faixa{
+  width: 80vh;
+  height: auto;
+}
+   }
