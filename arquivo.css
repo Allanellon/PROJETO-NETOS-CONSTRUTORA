@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #f4f6f8;
+    padding: 30px;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    color: #555;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+header  {
+    background-image: url(https://cdn.pixabay.com/photo/2020/11/05/23/16/city-5716456_1280.jpg);
+    background-size: cover;
+    padding: 2%;
+    text-align: center;
+    color: white;
+    font-family: geologica, sans-serif;
+    text-align: center;
+
+}
+h2 {
+    text-align: left;
+    font-size:150%;
+    margin-top:6%;
+}
+.logo {
+      position: absolute;
+      top: 20px;        /* Distância do topo */
+      left: 30px;       /* Distância da esquerda */
+      width: 80px;     /* Tamanho da logo */
+      height: auto;     /* Mantém proporção */
+      background-color: white;
+      border-radius: 15px;
+    
+
+      
+}
+.fonte {
+    font-family: geologica, sans-serif;
+    text-align: center;
+}
+.divtext {
+    text-align: center;
+    color: #214297;
+    font-family: geologica;
+    font-size: 80%;
+    margin-top: 5%;
+    text-shadow: 0px 0px 1px rgb(0, 0, 1)
+}
+footer {
+    background: linear-gradient(to bottom, rgb(2, 31, 108) 0%, rgb(3, 61, 209)100%);
+    padding: 100px;
+    text-align: left;
+    
+}
+.footerdiv1 {
+    font-size: 25px;
+    font-family: geologica;
+    text-align: left;
+    color: #ccc9;
+    margin-bottom: 15px;
+    margin-left: -15px;
+
+}
+.footerdiv2 {
+    font-size: 25px;
+    font-family: geologica;
+    text-align: right;
+    color: #ccc9;
+    margin-top: -135px;
+    margin-right: 100px;
+}
+.footerdiv3 {
+    font-size: 25px;
+    font-family: geologica;
+    text-align: right;
+    color: white;
+    margin-top: 15px;
+    margin-right: 70px;
+}
+a {
+    color: #ccc9;
+
+}
+a:hover {
+    color: black;
+}
+a:active {
+    color: purple;
+}
