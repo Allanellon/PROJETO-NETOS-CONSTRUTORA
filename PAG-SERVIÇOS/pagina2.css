@@ -173,7 +173,6 @@ html, body{
 }
 .faixa-container{
     position: relative;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 150px 20px;
     overflow: visible;
@@ -301,6 +300,7 @@ nav {
 
 
 @media (max-width: 768px) {
+  
   .faixa-2 {
     top: 800px; 
   }
@@ -324,11 +324,20 @@ nav {
   height: auto;
 }
 }
-@media (max-width: 480px) {
+@media (max-width: 320px) {
 
+  .comentario-texto{
+    font-size: 10px;
+  }
  .faixa-2 {
     top: 800px; 
+  
   }
+  .faixa{
+  width: 400%;
+  height: 300%;
+  margin-left: 120px;
+}
 
 #logo{
     max-width: 70px;
@@ -337,7 +346,8 @@ nav {
 }
 .imagem-destaque{
   top: -190px;
-  margin-right: -50px;
+  margin-right: -150px;
+  width: 120%;
   
 }
 .imagem-destaque-2{
@@ -351,7 +361,7 @@ nav {
   height: auto;
 }
 footer{
-  width: 134%;
+  width: 167%;
   padding: 10px;
   grid-template-columns: 1fr;
 }

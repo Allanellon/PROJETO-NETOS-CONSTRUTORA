@@ -272,7 +272,7 @@ bottom: 590%;
 }
 /* footer */
 footer{
-  width: 930px;
+  width: 300%;
   grid-template-columns: 1fr;
   text-align: center;
 }
