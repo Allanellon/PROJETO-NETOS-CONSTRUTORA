@@ -20,10 +20,14 @@ main {
 }
 header h1{
     margin: 0;
+    font-family: "Geologica", sans-serif;
+    font-weight: bold;
     position: absolute;
+    text-align: center;
     left: 50%;
     transform: translateX(-50%);
 }
+/*MENU*/
 body {
   overflow-x: hidden; /* bloqueia o scroll horizontal */
 }
@@ -89,10 +93,17 @@ html, body{
     margin: 0;
     padding: 0;
 }
+/*FIM DO MENU
+*/
 #logo{
     max-width: 80px;
-    margin-left: 5%;
-    margin-top: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+.pergunta{
+  font-family: "Open Sans", sans-serif;
+  color: #1A1243;
+  font-weight: bold;
 }
 #imagem2{
     width: 75%;
@@ -117,21 +128,36 @@ html, body{
 }
 .comentario-texto{
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-95%);
     width: 85%;
     font-size: clamp(13px,2vw,16px);
     text-align: center;
     line-height: 1.4;
+    font-family: "Open Sans", sans-serif;
+    color: #1A1243;
 }
-#mensagem {
+.mensagem {
   position: relative;       
   z-index: 1;               
   text-align: right;
-  margin: 0 10px auto;
-  font-size: clamp(12px, 1.2vw, 16px);
+  margin: 0px 10px auto;
+  font-size: clamp(12px, 1.4vw, 16px);
   line-height: 1.4;
+  font-family: "Open Sans", serif;
+  color: #1A1243;
+}
+.mensagem2 {
+  position: relative;       
+  z-index: 1;               
+  text-align: right;
+  margin: 0px 10px auto;
+  font-size: clamp(12px, 1.4vw, 16px);
+  line-height: 1.4;
+  font-family: "Open Sans", serif;
+  color: #1A1243;
+  left: 10%;
 }
 .imagem-destaque {
   position: relative;
@@ -279,60 +305,6 @@ nav {
     top: 800px; 
   }
 
-  /* footer */
-footer{
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: 150%;
-  box-sizing: border-box;
-}
-.netos-logo{
-  width: 300px;
-  position: relative;
-  align-items: center;
-  height: auto;
-}
-.mensagem-footer{
-  display: none;
-}
-.title, .rodape-letras{
-  font-size: 25px;
-}
-.title2{
-  margin-top: 50px;
-  font-size: 25px;
-}
-.number{
-  font-size: 28px;
-  margin-top: -10px;
-}
-.footer-img {
-  width: 60px;
-  margin-top: 30px;
-  height: auto;
-}
-.footer-img2 {
-  margin-top: 30px;
-  width: 40px;
-  height: auto;
-}
-.footer-zap{
-  width: 95px;
-  height: auto;
-}
- 
-
-main {
-  padding-top: 100px; /* ou um valor maior que a altura do header */
-}
- 
-html, body{
-    margin: 0;
-    padding: 0;
-}
 #logo{
     max-width: 80px;
     margin-left: 5%;
@@ -353,72 +325,19 @@ html, body{
 }
 }
 @media (max-width: 480px) {
+
  .faixa-2 {
     top: 800px; 
   }
 
-  /* footer */
-footer{
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  width: 150%;
-  box-sizing: border-box;
-}
-.netos-logo{
-  width: 300px;
-  position: relative;
-  align-items: center;
-  height: auto;
-}
-.mensagem-footer{
-  display: none;
-}
-.title, .rodape-letras{
-  font-size: 25px;
-}
-.title2{
-  margin-top: 50px;
-  font-size: 25px;
-}
-.number{
-  font-size: 28px;
-  margin-top: -10px;
-}
-.footer-img {
-  width: 60px;
-  margin-top: 30px;
-  height: auto;
-}
-.footer-img2 {
-  margin-top: 30px;
-  width: 40px;
-  height: auto;
-}
-.footer-zap{
-  width: 95px;
-  height: auto;
-}
- 
-
-main {
-  padding-top: 100px; /* ou um valor maior que a altura do header */
-}
-
-
-html, body{
-    margin: 0;
-    padding: 0;
-}
 #logo{
-    max-width: 80px;
+    max-width: 70px;
     margin-left: 5%;
-    margin-top: 20px;
+    margin-top: -20px;
 }
 .imagem-destaque{
-  top: -150px;
+  top: -190px;
+  margin-right: -50px;
   
 }
 .imagem-destaque-2{
@@ -430,5 +349,25 @@ html, body{
 .faixa{
   width: 80vh;
   height: auto;
+}
+footer{
+  width: 134%;
+  padding: 10px;
+  grid-template-columns: 1fr;
+}
+.mensagem-footer{
+display: none;
+}
+.comentario{
+  margin-left: 180px;
+}
+.mensagem{
+  display: block;
+  margin-left: 50px;
+  white-space: nowrap;
+}
+.mensagem2{
+  white-space: wrap;
+  margin-left: 100px;
 }
    }

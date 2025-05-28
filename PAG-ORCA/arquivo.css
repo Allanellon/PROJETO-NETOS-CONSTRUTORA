@@ -1,11 +1,77 @@
+/* menu */
+body {
+  overflow-x: hidden; /* bloqueia o scroll horizontal */
+}
+
+.menu{ 
+   position: relative;
+}
+.menu ul{
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center; 
+  position: absolute;
+  top: -170px; 
+  left: 94%;
+  width: 200px; 
+  transform: translateX(-50%);
+  height: auto;
+  padding: 20px 0;
+  gap: 20px;
+  background-color: #214297;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  border-radius: 7px;
+  height: 400px;
+  }
+  .hamburger {
+  display: block;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  z-index: 1000;
+  top: -200px;
+  right: 20px;
+}
+.hamburger span{
+  width: 39px;
+  display: block;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+.menu-letras{
+    font-family: 'AlumniSans-Thin', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none; 
+    color: white;
+    margin-top: 6px;
+  }
+ .menu ul.active {
+    display: flex;
+  }
+  .menu ul li {
+  margin-bottom: 40px;}
+
+/*  fim */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
     margin: 0;
     padding: 0;
 }
+form {
+    min-height: 500px;  /* altura mínima maior */
+}
 .container {
-    max-width: 600px;
+    width: 600px;
+    max-width: 1000px; 
     margin: 40px auto;
     background-color: #f4f6f8;
     padding: 30px;
@@ -171,3 +237,121 @@ nav {
   right: 20px;
   z-index: 1000;
 }
+
+@media (max-width:768px) {
+  .menu ul il{
+    margin-bottom: 10px;
+  }
+  .menu-letras{
+    font-size: 55px;
+  }
+  .menu ul{
+  gap: 70px;
+  top: -90px; 
+  left: 80%;
+  width: 600px; 
+  transform: translateX(-50%);
+  padding: 20px 0;
+  height: 800px;
+  border-radius: 12px;
+  }
+  .logo{
+    width: 200px;
+    margin-top: 17px;
+  }
+  header  {
+    height: 500px;
+   width: 400%;
+}
+
+.hamburger{
+  top: -400px;
+  left: 89%;
+}
+.hamburger span{
+width: 100px;
+height: 20px;
+}
+h2{
+  font-size: 60px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+h1{
+  text-align: center;
+  margin-top: 140px;
+  font-size: 70px;
+}
+  .orca{
+  font-family: "Konkhmer Sleokchher";
+  font-weight: normal;
+  font-size: 65px;
+  margin-right: -286%;
+  padding: 10px;
+}
+.container{
+  text-align: center;
+}
+form{
+  width: 250%;
+  margin-left: 90px;
+
+}
+button{
+  width: 60%;
+  height: auto;
+}
+label,input, placeholder{
+  font-size: 60px;
+  
+}
+textarea{
+  width: 100%;
+  height: 00%;
+
+
+
+}
+footer{
+  width: 358%;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-top: auto;
+  position: absolute;
+  top: 310%;
+}
+.netos-logo{
+  width: 400px;
+  position: relative;
+  height: auto;
+  
+
+}
+.mensagem-footer{
+  display: none;
+}
+.title, .rodape-letras{
+  font-size: 25px;
+}
+.title2{
+  margin-top: 50px;
+  font-size: 25px;
+}
+.number{
+  font-size: 28px;
+  margin-top: -10px;
+}
+.footer-img {
+  width: 60px;
+  margin-top: 30px;
+  height: auto;
+}
+.footer-img2 {
+  margin-top: 30px;
+  width: 40px;
+  height: auto;
+}
+.footer-zap{
+  width: 170px;
+ 
+}}

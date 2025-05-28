@@ -11,9 +11,21 @@
   <header>
     <div class="overlay">
       <img src="imagem/logo.png" alt="Logo Neto's" class="logo">
-      <nav class="menu">
-        <span>☰</span>
-      </nav>
+       <!--menu-->
+          <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div> <!-- Botão de hambuger oculto no pc -->
+        <ul>
+    <li><a href="../PAG-INICIO/netos.html" class="menu-letras">INÍCIO</a></li>
+    <li><a href="../PAG-SERVIÇOS/pagina2.html"  class="menu-letras">SERVIÇOS</a></li>
+    <li><a href="projetos.html" class="menu-letras">PROJETOS</a></li>
+    <li><a href="quem-somos.html" class="menu-letras">QUEM SOMOS?</a></li>
+    <li><a href="../PAG-ORCA/orcamento.html" class="menu-letras">ORÇAMENTO</a></li>
+        </ul>
+    </nav>
       <div class="header-text">
         <h1>PROJETOS</h1>
         <h2>CASA AURORA</h2>
@@ -82,6 +94,12 @@
   <div class="voltar-container">
   <button onclick="history.back()" class="btn-voltar">← Voltar</button>
 </div>
+
+<script>
+   function toggleMenu() {
+    const menu = document.querySelector(".menu ul");
+    menu.classList.toggle("active");}
+  </script>
 
 </body>
 </html>

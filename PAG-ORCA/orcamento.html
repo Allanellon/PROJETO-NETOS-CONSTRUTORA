@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitar Orçamento</title>
     <link rel="stylesheet" href="arquivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
 <header>
     <img src="imagens/Logo.png" alt="logo do site" class="logo">
     <h1>ORÇAMENTO</h1>
     <h2>Solicite seu orçamento e descubra como<br> é fácil tirar do papel.</h2>
+      <!--menu-->
+          <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div> <!-- Botão de hambuger oculto no pc -->
+        <ul>
+    <li><a href="../PAG-INICIO/netos.html" class="menu-letras">INÍCIO</a></li>
+    <li><a href="../PAG-SERVIÇOS/pagina2.html"  class="menu-letras">SERVIÇOS</a></li>
+    <li><a href="../PAG-PROJ/projetos.html" class="menu-letras">PROJETOS</a></li>
+    <li><a href="quem-somos.html" class="menu-letras">QUEM SOMOS?</a></li>
+    <li><a href="orcamento.html" class="menu-letras">ORÇAMENTO</a></li>
+        </ul>
+    </nav>
 </header>
+<main>
 <div class="divtext">
-    <h1>TRANSFORME SEU ESPAÇO COM QUALIDADE E CONFIANÇA</h1>
+    <h1 class="orca">TRANSFORME SEU ESPAÇO COM QUALIDADE E CONFIANÇA</h1>
 </div>
 <div class="container">
     <form action="#" method="POST">
@@ -32,7 +51,7 @@
         <button type="submit">Enviar Solicitação</button>
     </form>
 </div>
-
+</main>
 <!-- FOOTER -->
 <footer>
 
@@ -52,8 +71,8 @@
     <h4 class="title">MENU</h4>
     <ul class="lista-footer">
       <li><a href="../PAG-INICIO/netos.html" class="rodape-letras">INÍCIO</a></li>
-      <li><a href="pagina2.html" class="rodape-letras">SERVIÇOS</a></li>
-      <li><a href="#projetos" class="rodape-letras">PROJETOS</a></li>
+      <li><a href="../PAG-SERVIÇOS/pagina2.html" class="rodape-letras">SERVIÇOS</a></li>
+      <li><a href="../PAG-PROJ/projetos.html" class="rodape-letras">PROJETOS</a></li>
       <li><a href="#quem" class="rodape-letras">QUEM SOMOS?</a></li>
       <li><a href="orcamento.html" class="rodape-letras">ORÇAMENTO</a></li>
     </ul>
@@ -81,7 +100,11 @@
   </a>
 
 </footer>
-
+<script>
+ function toggleMenu() {
+    const menu = document.querySelector(".menu ul");
+    menu.classList.toggle("active");}
+</script>
 
 </body>
 </html>
