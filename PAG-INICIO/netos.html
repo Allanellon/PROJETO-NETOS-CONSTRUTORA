@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netos Engenharia</title>
+    <link rel="stylesheet" href="pagina-inicio.css">
+</head>
+
+<body>
+<!--CABEÇALHO-MENU-->
+<header class="menu-header">
+    <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div> <!-- Botão de hambuger oculto no pc -->
+
+        <ul>
+    <li><a href="netos.html" class="menu-letras">INÍCIO</a></li>
+    <li><a href="../PAG-SERVIÇOS/pagina2.html"  class="menu-letras">SERVIÇOS</a></li>
+    <li><a href="../PAG-PROJ/projetos.html" class="menu-letras">PROJETOS</a></li>
+    <li><a href="../PAG-QUEM-SOMOS/quem-somos.html" class="menu-letras">QUEM SOMOS?</a></li>
+    <li><a href="../PAG-ORCA/orcamento.html" class="menu-letras">ORÇAMENTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--IMAGENS/TEXTOS/BOTÃO DO HEADER-->
+<section class="relativo">
+
+<img src= "./DESIGN/imagens-ini/logoo-branco.png" class="logo" id="#inicio">
+
+<h1 class="mensag-header">PROJETAMOS, CONSTRUÍMOS E TRANSFORMAMOS</h1>
+
+<button type="submit">SOLICITE SEU ORÇAMENTO</button>
+</section>
+
+<!--info de serviços-->
+<h3 class="sub italic">Nossos Serviços</h3>
+
+<!--Uma div para cada conjunto de imagem e texto-->
+<section class="icones-grids espaco">
+  <div class="item-servico">
+    <img src="./DESIGN/imagens-ini/casa.png" class="icones">
+    <h3>Reformas Residenciais</h3>
+    <h6>Personalize seu lar com segurança e qualidade</h6>
+  </div>
+
+  <div class="item-servico">
+    <img src="./DESIGN/imagens-ini/predio (3).png" class="icones">
+    <h3>Construções Comerciais</h3>
+    <h6>Do projeto à entrega com profissionalismo.</h6>
+  </div>
+
+  <div class="item-servico">
+    <img src="./DESIGN/imagens-ini/ferramentas.png" class="icones">
+    <h3>Execução e Acompanhamento de Obras</h3>
+    <h6>Gestão completa da sua obra do início ao fim.</h6>
+    
+  </div>
+</section>
+
+<!--PROJETOS EM DESTAQUE-->
+<div class="container-texto">
+<h3 class="sub2 ">Projetos em Destaque</h3>
+<h3 class="pr">Veja como transformamos ideias em espaços reais e funcionais.</h3>
+</div>
+<div class="imagens-projetos">
+<img src="./DESIGN/imagens-ini/igreja.png" class="img1">
+<img src="./DESIGN/imagens-ini/praia.png" class="img2">
+<img src="./DESIGN/imagens-ini/igreja2.png" class="img3">
+</div>
+
+<!-- ULTIMA SEÇÃO- PQ-->
+<section class="imagens-last">
+<img src="./DESIGN/imagens-ini/eng.png" class="last">
+<h3 class="pq">Por que escolher a Netos Engenharia?</h3>
+
+<div class="criterios">
+  <ul class="lista-criterios">
+      <li>Compromisso com prazos</li>
+      <li> Materiais de qualidade</li>
+      <li> Atendimento personalizado</li>
+      <li> Transparência do início ao fim</li>
+  </ul>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+  <!-- Coluna 1: Logo e mensagem -->
+  <div>
+    <img src="./DESIGN/imagens-ini/logo-mod.png" alt="logo da netos" class="netos-logo">
+    <p class="mensagem-footer">
+      Planejamos, construímos e entregamos com <br>
+      qualidade e atenção aos detalhes. Nossa equipe <br>
+      trabalha para tornar seu projeto realidade com <br>
+      segurança, organização e confiança.
+    </p>
+  </div>
+
+  <!-- Coluna 2: Menu -->
+  <nav>
+    <h4 class="title">MENU</h4>
+    <ul class="lista-footer">
+      <li><a href="netos.html" class="rodape-letras">INÍCIO</a></li>
+      <li><a href="../PAG-SERVIÇOS/pagina2.html" class="rodape-letras">SERVIÇOS</a></li>
+      <li><a href="../PAG-PROJ/projetos.html" class="rodape-letras">PROJETOS</a></li>
+      <li><a href="../PAG-QUEM-SOMOS/quem-somos.html" class="rodape-letras">QUEM SOMOS?</a></li>
+      <li><a href="../PAG-ORCA/orcamento.html" class="rodape-letras">ORÇAMENTO</a></li>
+    </ul>
+  </nav>
+
+  <!-- Coluna 3: Contatos e redes -->
+  <div>
+    <h4 class="title2">CONTATOS</h4>
+    <h6 class="number">(81) 99488-0458</h6>
+    <div class="icones-redes">
+      <!-- insta -->
+      <a href="https://www.instagram.com/netosengenharia" target="_blank">
+        <img src="./DESIGN/imagens-ini/Instagram.png" alt="Instagram" class="footer-img">
+      </a>
+      <!-- face -->
+      <a href="https://www.facebook.com/netosengenharia?locale=pt_BR" target="_blank">
+        <img src="./DESIGN/imagens-ini/face.png" alt="Facebook" class="footer-img2">
+      </a>
+    </div>
+  </div>
+
+  <!-- icone zap fixo -->
+  <a href="https://w.app/netos-engenharia" target="_blank">
+    <img src="./DESIGN/imagens-ini/zap.png" alt="Ícone do WhatsApp" class="footer-zap">
+  </a>
+
+</footer>
+
+<!-- JAVA SCRIPT DO BOTAO DE MENU (HAMBURGER) -->
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu ul");
+    menu.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
+
+

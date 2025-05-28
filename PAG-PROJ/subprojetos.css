@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2c61;
+}
+
+header {
+  position: relative;
+  height: 400px;
+  background: url('imagem/sala.png') center/cover no-repeat;
+  color: white;
+}
+/* menu */
+body {
+  overflow-x: hidden; /* bloqueia o scroll horizontal */
+}
+.menu{ 
+   position: relative;
+}
+.menu ul{
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center; 
+  position: absolute;
+  top: 30px; 
+  left: 40px;
+  width: 200px; 
+  transform: translateX(-120%);
+  height: auto;
+  padding: 20px 0;
+  gap: 20px;
+  background-color: #214297;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  border-radius: 7px;
+  height: 400px;
+  }
+  .hamburger {
+  display: block;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  right: 20px;
+}
+.hamburger span{
+  width: 39px;
+  display: block;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+.menu-letras{
+    font-family: 'AlumniSans-Thin', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none; 
+    color: white;
+    margin-top: 6px;
+  }
+ .menu ul.active {
+    display: flex;
+  }
+  .menu ul li {
+  margin-bottom: 40px;
+
+}
+/* fim */
+.overlay {
+  background: rgba(0, 44, 119, 0.85);
+  height: 90%;
+  padding: 20px;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+}
+
+.header-text {
+  margin-top: 80px;
+}
+
+.header-text h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header-text h2 {
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.header-text .info {
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.icons {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 40px;
+  background: white;
+  padding: 30px 0;
+  
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px; /* ou outro valor fixo desejado */
+}
+
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+.icon p {
+  margin: 0;
+  font-weight: bold;
+  color: #1f2c61;
+}
+
+.main-image-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.blue-strip {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150%;
+  height: 150px;
+  background-color: #1f2c61;
+  z-index: 0;
+}
+
+.main-image {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+}
+
+.main-image img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+
+.info-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.info-item {
+  margin: 20px;
+}
+
+.info-item h3 {
+  font-size: 28px;
+  color: #1f2c61;
+  margin-bottom: 5px;
+}
+
+.descricao {
+  padding: 0 20px 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.descricao h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.galeria {
+  background: #1f2c61;
+  color: white;
+  padding: 40px 20px;
+}
+
+.galeria h4 {
+  margin-bottom: 20px;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.voltar-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+}
+
+.btn-voltar {
+  background-color: #1f2c61;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #16315d;
+}
+
+@media (max-width:320px) {
+  header{
+    width: 129%;
+  }
+  .galeria{
+    width: 116%; 
+  }
+  .icons{
+    margin-left: 90px;
+  }
+  .icon{
+    margin-left: -20px;
+  }
+   .blue-strip{
+    width: 154%;
+   }
+   .main-image{
+    margin-right: -75px;
+    width: 80%;
+    height: auto;
+   }
+}

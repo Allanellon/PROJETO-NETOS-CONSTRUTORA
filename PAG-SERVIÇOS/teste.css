@@ -1,0 +1,450 @@
+header{
+    background-color: #214297;
+    color: #ffffff;
+    border: none;
+    padding-top:10px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+main {
+  padding-top: 100px; /* ou um valor maior que a altura do header */
+}
+header h1{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+body {
+  overflow-x: hidden; /* bloqueia o scroll horizontal */
+}
+.menu{
+  position: relative;
+}
+.menu ul li {
+  margin-bottom: 40px;
+
+}
+.menu ul{
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center; 
+  position: absolute;
+  top: 20px; 
+  right: 20px;  /* Ajustado de 110px */  
+  width: 240px; 
+  height: auto;
+  padding: 20px 0;
+  gap: 20px;
+  background-color: #214297;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  border-radius: 7px;
+  }
+ 
+ .menu-letras{
+    font-family: 'AlumniSans-Thin', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none; 
+    color: white;
+
+  }
+ nav a:hover{
+  color: #527ce8;
+ }
+ .hamburguer{
+  display: block;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+}
+.hamburguer span{
+  width: 39px;
+  display: block;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+ .menu ul.active {
+    display: flex;
+  }
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-width: 80px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+#imagem2{
+    width: 75%;
+    max-width: 450px;
+    display: block; /* Ensure it's a block element for margin auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+.comentario{
+    position: relative;
+    width: 100%;
+    margin: 20px 0 20px auto;
+    max-width: 500px;
+    text-align: right;
+}
+.comentario img{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    
+}
+.comentario-texto{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    width: 85%;
+    font-size: clamp(13px,2vw,16px);
+    text-align: center;
+    line-height: 1.4;
+}
+#mensagem {
+  position: relative;       
+  z-index: 1;               
+  text-align: right;
+  margin: 0 10px auto;
+  font-size: clamp(12px, 1.2vw, 16px);
+  line-height: 1.4;
+}
+
+.faixa-container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 20px;
+    overflow: visible;
+    margin-top: -150px;
+
+}
+.faixa {
+    position:absolute;   
+    left: 50%;               
+    transform: translateX(-50%); 
+    width: 123%;            
+    display: block;     
+    margin: 0 auto;      
+    transform-origin: center;
+    margin-top: -700px;
+    z-index: -1;
+}
+.faixa {
+    position:absolute;   
+    left: 50%;               
+    transform: translateX(-50%); 
+    width: 123%;            
+    display: block;     
+    margin: 0 auto;      
+    transform-origin: center;
+    top: 400px;
+    z-index: -1;
+    padding-bottom: 40px;
+}
+.faixa-2 {
+  top: 1100px;
+}
+/* FOOTER */
+
+footer {
+  padding:100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  background: linear-gradient(to bottom, rgb(2, 31, 108) 0%, rgb(3, 61, 209) 100%);
+  font-family: "Gantari-Regular", sans-serif;
+}
+
+/* Coluna 1: Logo e mensagem */
+.netos-logo {
+  width: 250px;
+  height: auto;
+  margin-top: -8px;
+  margin-left: 50px;
+}
+.mensagem-footer {
+  font-family: "Inter_18pt-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(193, 193, 188, 0.84);
+  margin-top: -18px;
+  margin-left: 60px;
+}
+
+/* Coluna 2: Menu */
+nav {
+  text-align: center;
+}
+.title {
+  font-family: "GemunuLibre-Bold", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgba(193, 193, 188, 0.84);
+}
+.lista-footer {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.rodape-letras {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+.rodape-letras:hover {
+  text-decoration: underline;
+}
+
+/* Coluna 3: Contatos e redes */
+.title2 {
+  font-family: "GemunuLibre-Bold", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgba(193, 193, 188, 0.84);
+  text-align: center;
+}
+.number {
+  font-family: 'Geologica-Regular', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Ícones das redes sociais */
+.icones-redes {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Aumentado de 15px */
+}
+.footer-img {
+  width: 30px;
+  height: auto;
+}
+.footer-img2 {
+  width: 20px;
+  height: auto;
+}
+
+/* Ícone WhatsApp fixo - manter separado */
+.footer-zap {
+  width: 70px;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.imagem-destaque {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  max-width: 680px;
+  margin: 100px auto; /* Reduzido de 280px auto */
+  display: block;
+  border-radius: 40px;
+}
+.faixa-container p:last-of-type {
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .faixa-2 {
+    top: 800px; 
+  }
+
+  .menu ul{
+  width: 220px; 
+  right: 40px;  
+  }
+
+  /* footer */
+footer{
+  width: 100%; /* Ajustado de 920px */
+  grid-template-columns: 1fr;
+  text-align: center;
+  gap: 40px; /* Adicionado para espaçamento vertical */
+  padding-top: 40px; /* Adicionado padding superior */
+  padding-bottom: 40px; /* Adicionado padding inferior */
+}
+.netos-logo{
+  width: auto; /* Ajustado de 400px */
+  max-width: 80%; /* Adicionado para flexibilidade */
+  margin-left: auto; /* Adicionado para centralizar */
+  margin-right: auto; /* Adicionado para centralizar */
+  position: relative;
+  height: auto;
+}
+.mensagem-footer{
+  display: none;
+}
+.title, .rodape-letras{
+  font-size: 25px;
+}
+.title2{
+  margin-top: 50px;
+  font-size: 25px;
+}
+.number{
+  font-size: 28px;
+  margin-top: -10px;
+}
+.footer-img {
+  width: 60px;
+  margin-top: 30px;
+  height: auto;
+}
+.footer-img2 {
+  margin-top: 30px;
+  width: 40px;
+  height: auto;
+}
+.footer-zap{
+  width: 95px;
+  height: auto;
+}
+}
+
+@media (max-width: 480px) {
+  .faixa-2 {
+    top: 600px; 
+  }
+}
+
+ 
+
+/* FOOTER - Media Query Adjustments (Corrections) */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 20px; /* Ajustado padding */
+    display: flex; /* Mudado para flexbox */
+    flex-direction: column; /* Empilhar verticalmente */
+    align-items: center; /* Centralizar itens */
+    gap: 30px; /* Espaçamento entre seções (ajustado de 40px) */
+    width: 100%; /* Garantir largura total */
+    box-sizing: border-box; /* Incluir padding na largura */
+    /* Removido grid-template-columns e text-align: center herdados */
+  }
+
+  /* Coluna 1: Logo */
+  footer > div:nth-of-type(1) { /* Seleciona a div do logo */
+    text-align: center;
+    margin-bottom: 0; /* Removido margin-bottom extra, gap cuida disso */
+    width: 100%; /* Garantir que o container ocupe a largura */
+  }
+
+  .netos-logo {
+    width: auto !important; 
+    max-width: 200px !important; /* Reduzido max-width para mobile */
+    height: auto !important;
+    margin: 0 auto 10px auto !important; /* Centralizar e adicionar margem inferior */
+    display: block !important;
+    position: static !important; /* Resetar position relative se houver */
+  }
+
+  .mensagem-footer {
+    display: none !important; /* Mantido oculto */
+  }
+
+  /* Coluna 2: Menu */
+  footer nav {
+    text-align: center;
+    width: 100%; /* Ocupar largura */
+    margin-bottom: 0; /* Removido margin-bottom extra */
+  }
+
+  .title {
+    font-size: 20px !important; /* Ajustado tamanho */
+    margin-bottom: 10px !important;
+  }
+
+  .lista-footer {
+    gap: 10px !important; /* Ajustado espaçamento */
+    align-items: center;
+    padding: 0; /* Resetar padding se houver */
+    margin: 0; /* Resetar margin se houver */
+    display: flex; /* Garantir flex */
+    flex-direction: column; /* Garantir coluna */
+  }
+
+  .rodape-letras {
+    font-size: 16px !important; /* Ajustado tamanho */
+  }
+
+  /* Coluna 3: Contatos */
+  footer > div:nth-of-type(2) { /* Seleciona a div de contatos */
+     text-align: center;
+     width: 100%; /* Ocupar largura */
+     margin-top: 0; /* Resetar margin-top */
+  }
+
+  .title2 {
+    font-size: 20px !important; /* Ajustado tamanho */
+    margin-bottom: 10px !important;
+    margin-top: 0 !important; /* Removido margin-top anterior */
+  }
+
+  .number {
+    font-size: 18px !important; /* Ajustado tamanho */
+    margin-bottom: 15px !important;
+    margin-top: 0 !important;
+  }
+
+  .icones-redes {
+    gap: 25px !important; /* Ajustado gap */
+    margin-top: 0 !important; /* Removido margin-top anterior */
+    justify-content: center; /* Garantir centralização */
+    display: flex; /* Garantir flex */
+  }
+
+  .footer-img {
+    width: 35px !important; /* Ajustado tamanho */
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+
+  .footer-img2 {
+    width: 25px !important; /* Ajustado tamanho */
+    height: auto !important;
+    margin-top: 0 !important;
+  }
+
+  /* Remover regras conflitantes da media query anterior se necessário */
+  /* Ex: remover width: 920px; grid-template-columns: 1fr; etc. */
+}
+
+/* Manter a media query para 480px se houver ajustes específicos */
+@media (max-width: 480px) {
+  .faixa-2 {
+    top: 600px; 
+  }
+  /* Adicionar outros ajustes específicos para 480px se necessário */
+}
+
