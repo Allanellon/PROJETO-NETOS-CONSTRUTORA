@@ -335,7 +335,7 @@ body, html {
 @media (max-width:768px){
   /* footer */
 footer{
-  width: 113%;
+  width: 130%;
   height: 70%;
   padding: 50px 20px;
   grid-template-columns: 1fr;
@@ -376,7 +376,7 @@ footer{
   height: auto;
 }
   .cards {
-   margin-left: 60px;
+   margin-left: 7%;
    width: 360px;
   }
 .white-line {
@@ -388,7 +388,7 @@ footer{
   border-radius: 1px; 
 }
 .hamburger{
-  left: 13%;
+  margin-right: -60px;
 }
 .hamburger span{
   width: 20px;
@@ -405,10 +405,14 @@ footer{
 .filtro{
   margin-left: 35px;
 }
+h1{
+  margin-left: 10px;
+}
 }
 
 @media (max-width: 320px){
   .footer{
     display: none;
   }
+
 }

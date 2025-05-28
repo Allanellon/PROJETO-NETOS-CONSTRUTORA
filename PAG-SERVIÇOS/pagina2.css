@@ -157,7 +157,7 @@ html, body{
   line-height: 1.4;
   font-family: "Open Sans", serif;
   color: #1A1243;
-  left: 10%;
+  left: -40px;
 }
 .imagem-destaque {
   position: relative;
@@ -378,6 +378,6 @@ display: none;
 }
 .mensagem2{
   white-space: wrap;
-  margin-left: 100px;
+  margin-right: -240px;
 }
    }

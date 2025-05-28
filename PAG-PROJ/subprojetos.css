@@ -249,5 +249,24 @@ body {
 }
 
 @media (max-width:320px) {
-  
+  header{
+    width: 129%;
+  }
+  .galeria{
+    width: 116%; 
+  }
+  .icons{
+    margin-left: 90px;
+  }
+  .icon{
+    margin-left: -20px;
+  }
+   .blue-strip{
+    width: 154%;
+   }
+   .main-image{
+    margin-right: -75px;
+    width: 80%;
+    height: auto;
+   }
 }
