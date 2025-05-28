@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços</title>
+  <link rel="stylesheet" href="pagina2.css">
+</head>
+<body>
+
+  
+  <header>
+    <img src="assets/logo-vazio.png" id="logo" alt="Logo">
+    <h1>SERVIÇOS</h1>
+    <nav class="menu">
+      <div class="hamburguer" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+      <ul>
+        <li><a href="index.html"  class="menu-letras">Início</a></li>
+        <li><a href="servicos.html"  class="menu-letras">Serviços</a></li>
+        <li><a href="projetos.html" class="menu-letras">Projetos</a></li>
+        <li><a href="quem-somos.html" class="menu-letras">Quem Somos?</a></li>
+        <li><a href="orcamento.html"  class="menu-letras">Orçamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="faixa-container">
+      <p class="pergunta">Você deve estar se perguntando...</p>
+      <img src="assets/caixadepesquisa.png" id="imagem2" alt="Caixa de pesquisa">
+
+      <div class="comentario">
+        <img src="assets/LOGOMARCA - F&COSTA LTDA EPP.pdf (3) 1.svg" alt="Balão de fala">
+        <p class="comentario-texto">
+          <strong>Atendemos desde pequenas reformas até grandes construções comerciais e residenciais!</strong>
+        </p>
+      </div>
+
+      <p id="mensagem">
+        Especialistas em reformas residenciais. Valorizamos sua casa com soluções modernas,<br> seguras e sob medida para cada ambiente — da cozinha à área externa,<br>cuidamos de cada detalhe com eficiência e bom gosto.
+      </p>
+
+      <img src="assets/image 10.svg" class="imagem-destaque">
+      <img src="assets/Rectangle 23.svg" class="faixa">
+      <img src="assets/image 9.svg" class="imagem-destaque imagem-destaque-2">
+      <img src="assets/Rectangle 24.svg" class="faixa faixa-2">
+    
+    <p class="proximidade">Especialistas em reformas residenciais. Valorizamos sua casa com soluções modernas, seguras e sob medida para cada ambiente — da cozinha à área externa,<br> cuidamos de cada detalhe com eficiência e bom gosto.</p>
+    </div>
+  </main>
+
+<footer>
+
+  <!-- Coluna 1: Logo e mensagem -->
+  <div>
+    <img src="./assets/netos-footer.png" alt="logo da netos" class="netos-logo">
+    <p class="mensagem-footer">
+      Planejamos, construímos e entregamos com <br>
+      qualidade e atenção aos detalhes. Nossa equipe <br>
+      trabalha para tornar seu projeto realidade com <br>
+      segurança, organização e confiança.
+    </p>
+  </div>
+
+  <!-- Coluna 2: Menu -->
+  <nav>
+    <h4 class="title">MENU</h4>
+    <ul class="lista-footer">
+      <li><a href="netos.html" class="rodape-letras">INÍCIO</a></li>
+      <li><a href="pagina2.html" class="rodape-letras">SERVIÇOS</a></li>
+      <li><a href="projetos.html" class="rodape-letras">PROJETOS</a></li>
+      <li><a href="quem-somos.html" class="rodape-letras">QUEM SOMOS?</a></li>
+      <li><a href="orçamento.html" class="rodape-letras">ORÇAMENTO</a></li>
+    </ul>
+  </nav>
+
+  <!-- Coluna 3: Contatos e redes -->
+  <div>
+    <h4 class="title2">CONTATOS</h4>
+    <h6 class="number">(81) 99488-0458</h6>
+    <div class="icones-redes">
+      <!-- insta -->
+      <a href="https://www.instagram.com/netosengenharia" target="_blank">
+        <img src="./assets/insta.png" alt="Instagram" class="footer-img">
+      </a>
+      <!-- face -->
+      <a href="https://www.facebook.com/netosengenharia?locale=pt_BR" target="_blank">
+        <img src="./assets/face.png" alt="Facebook" class="footer-img2">
+      </a>
+    </div>
+  </div>
+
+  <!-- icone zap fixo -->
+  <a href="https://w.app/netos-engenharia" target="_blank">
+    <img src="./assets/zap 2.png" alt="Ícone do WhatsApp" class="footer-zap">
+  </a>
+
+</footer>
+
+  <!-- JAVA SCRIPT DO BOTAO DE MENU (HAMBURGER) -->
+
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu ul");
+    menu.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

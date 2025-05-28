@@ -1,0 +1,434 @@
+header{
+    background-color: #214297;
+    color: #ffffff;
+    border: none;
+    padding-top:10px;
+    width: 105%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 9999; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+main {
+  padding-top: 100px; /* ou um valor maior que a altura do header */
+}
+header h1{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+body {
+  overflow-x: hidden; /* bloqueia o scroll horizontal */
+}
+.menu{
+  position: relative;
+}
+.menu ul li {
+  margin-bottom: 40px;
+
+}
+.menu ul{
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center; 
+  position: absolute;
+  top: 20px; 
+  right: 110px;  
+  width: 240px; 
+  height: auto;
+  padding: 20px 0;
+  gap: 20px;
+  background-color: #214297;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  border-radius: 7px;
+  }
+ 
+ .menu-letras{
+    font-family: 'AlumniSans-Thin', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none; 
+    color: white;
+
+  }
+ nav a:hover{
+  color: #527ce8;
+ }
+ .hamburguer{
+  display: block;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  position: fixed;
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+}
+.hamburguer span{
+  width: 39px;
+  display: block;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+ .menu ul.active {
+    display: flex;
+  }
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-width: 80px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+#imagem2{
+    width: 75%;
+    display: block;
+    max-width: 450px;
+    margin-left: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.comentario{
+    position: relative;
+    width: 100%;
+    margin: 20px 0 20px auto;
+    max-width: 500px;
+    text-align: right;
+}
+.comentario img{
+    width: 100%;
+    height: auto;
+    display: block;
+    
+}
+.comentario-texto{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    width: 85%;
+    font-size: clamp(13px,2vw,16px);
+    text-align: center;
+    line-height: 1.4;
+}
+#mensagem {
+  position: relative;       
+  z-index: 1;               
+  text-align: right;
+  margin: 0 10px auto;
+  font-size: clamp(12px, 1.2vw, 16px);
+  line-height: 1.4;
+}
+.imagem-destaque {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  max-width: 680px;
+  margin: 280px auto;
+  display: block;
+  border-radius: 40px;
+}
+.faixa-container p:last-of-type {
+  margin-bottom: 0;
+}
+.faixa-container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 20px;
+    overflow: visible;
+    margin-top: -150px;
+}
+.faixa {
+    position:absolute;   
+    left: 50%;               
+    transform: translateX(-50%); 
+    width: 100vh;    /*123%*/   
+    display: block;     
+    margin: 0 auto;      
+    transform-origin: center;
+    margin-top: -700px;
+    z-index: -1;
+}
+.faixa {
+    position:absolute;   
+    left: 50%;               
+    transform: translateX(-50%); 
+    width: 123%;            
+    display: block;     
+    margin: 0 auto;      
+    transform-origin: center;
+    top: 400px;
+    z-index: -1;
+    padding-bottom: 40px;
+}
+.faixa-2 {
+  top: 1100px;
+}
+/* FOOTER */
+
+footer {
+  padding:100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  background: linear-gradient(to bottom, rgb(2, 31, 108) 0%, rgb(3, 61, 209) 100%);
+  font-family: "Gantari-Regular", sans-serif;
+}
+
+/* Coluna 1: Logo e mensagem */
+.netos-logo {
+  width: 250px;
+  height: auto;
+  margin-top: -8px;
+  margin-left: 50px;
+}
+.mensagem-footer {
+  font-family: "Inter_18pt-Regular", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(193, 193, 188, 0.84);
+  margin-top: -1px;
+  margin-left: 60px;
+}
+
+/* Coluna 2: Menu */
+nav {
+  text-align: center;
+}
+.title {
+  font-family: "GemunuLibre-Bold", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgba(193, 193, 188, 0.84);
+}
+.lista-footer {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.rodape-letras {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+.rodape-letras:hover {
+  text-decoration: underline;
+}
+
+/* Coluna 3: Contatos e redes */
+.title2 {
+  font-family: "GemunuLibre-Bold", sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: rgba(193, 193, 188, 0.84);
+  text-align: center;
+}
+.number {
+  font-family: 'Geologica-Regular', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Ícones das redes sociais */
+.icones-redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.footer-img {
+  width: 30px;
+  height: auto;
+}
+.footer-img2 {
+  width: 20px;
+  height: auto;
+}
+
+/* Ícone WhatsApp fixo - manter separado */
+.footer-zap {
+  width: 70px;
+  height: auto;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+
+@media (max-width: 768px) {
+  .faixa-2 {
+    top: 800px; 
+  }
+
+  /* footer */
+footer{
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 150%;
+  box-sizing: border-box;
+}
+.netos-logo{
+  width: 300px;
+  position: relative;
+  align-items: center;
+  height: auto;
+}
+.mensagem-footer{
+  display: none;
+}
+.title, .rodape-letras{
+  font-size: 25px;
+}
+.title2{
+  margin-top: 50px;
+  font-size: 25px;
+}
+.number{
+  font-size: 28px;
+  margin-top: -10px;
+}
+.footer-img {
+  width: 60px;
+  margin-top: 30px;
+  height: auto;
+}
+.footer-img2 {
+  margin-top: 30px;
+  width: 40px;
+  height: auto;
+}
+.footer-zap{
+  width: 95px;
+  height: auto;
+}
+ 
+
+main {
+  padding-top: 100px; /* ou um valor maior que a altura do header */
+}
+ 
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-width: 80px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.imagem-destaque{
+  top: -250px;
+}
+.imagem-destaque-2{
+  top: -450px;
+}
+.proximidade{
+  margin-top: -600px;
+}
+.faixa{
+  width: 80vh;
+  height: auto;
+}
+}
+@media (max-width: 480px) {
+ .faixa-2 {
+    top: 800px; 
+  }
+
+  /* footer */
+footer{
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 150%;
+  box-sizing: border-box;
+}
+.netos-logo{
+  width: 300px;
+  position: relative;
+  align-items: center;
+  height: auto;
+}
+.mensagem-footer{
+  display: none;
+}
+.title, .rodape-letras{
+  font-size: 25px;
+}
+.title2{
+  margin-top: 50px;
+  font-size: 25px;
+}
+.number{
+  font-size: 28px;
+  margin-top: -10px;
+}
+.footer-img {
+  width: 60px;
+  margin-top: 30px;
+  height: auto;
+}
+.footer-img2 {
+  margin-top: 30px;
+  width: 40px;
+  height: auto;
+}
+.footer-zap{
+  width: 95px;
+  height: auto;
+}
+ 
+
+main {
+  padding-top: 100px; /* ou um valor maior que a altura do header */
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    max-width: 80px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.imagem-destaque{
+  top: -150px;
+  
+}
+.imagem-destaque-2{
+  top: -250px;
+}
+.proximidade{
+  margin-top: -400px;
+}
+.faixa{
+  width: 80vh;
+  height: auto;
+}
+   }
