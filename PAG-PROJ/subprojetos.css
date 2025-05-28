@@ -247,3 +247,7 @@ body {
 .btn-voltar:hover {
   background-color: #16315d;
 }
+
+@media (max-width:320px) {
+  
+}

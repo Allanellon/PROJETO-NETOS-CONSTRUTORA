@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos?t</title>
+     <link rel="stylesheet" href="quem-somos.css">
+</head>
+<body>
+      <header>
+    <h1>Netos Engenharia</h1>
+    <p>Construindo o futuro com qualidade e confiança</p>
+       <nav class="menu">
+      <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div> <!-- Botão de hambuger oculto no pc -->
+
+        <ul>
+    <li><a href="../PAG-INICIO/netos.html" class="menu-letras">INÍCIO</a></li>
+    <li><a href="../PAG-SERVIÇOS/pagina2.html"  class="menu-letras">SERVIÇOS</a></li>
+    <li><a href="../PAG-PROJ/projetos.html" class="menu-letras">PROJETOS</a></li>
+    <li><a href="quem-somos.html" class="menu-letras">QUEM SOMOS?</a></li>
+    <li><a href="../PAG-ORCA/orcamento.html" class="menu-letras">ORÇAMENTO</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="quem-somos">
+      <h2>Quem Somos? </h2>
+      <p class="text">
+        A <strong>Netos Engenharia</strong> é uma empresa especializada no setor da construção civil, com anos de experiência entregando obras de alta qualidade e total comprometimento com nossos clientes. Atuamos em projetos residenciais, comerciais e industriais, sempre priorizando a segurança, inovação e sustentabilidade.</p>
+
+            <p>Nosso time é formado por engenheiros, arquitetos e profissionais qualificados, prontos para transformar ideias em realidade. Na Neto Engenharia, construímos mais do que estruturas — construímos sonhos.</p>
+    </section>
+
+    <section class="galeria">
+      <img src="./imagens/casa 1.avif" alt="Casa 1">
+      <img src="./imagens/casa 2.jpg" alt="Casa 2">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Casa 3">
+    </section>
+  </main>
+  <!-- FOOTER -->
+<footer>
+
+  <!-- Coluna 1: Logo e mensagem -->
+  <div>
+    <img src="./imagens/logo-footer - Copia.png" alt="logo da netos" class="netos-logo">
+    <p class="mensagem-footer">
+      Planejamos, construímos e entregamos com <br>
+      qualidade e atenção aos detalhes. Nossa equipe <br>
+      trabalha para tornar seu projeto realidade com <br>
+      segurança, organização e confiança.
+    </p>
+  </div>
+
+  <!-- Coluna 2: Menu -->
+  <nav>
+    <h4 class="title">MENU</h4>
+    <ul class="lista-footer">
+      <li><a href="../PAG-INICIO/netos.html" class="rodape-letras">INÍCIO</a></li>
+      <li><a href="../PAG-SERVIÇOS/pagina2.html" class="rodape-letras">SERVIÇOS</a></li>
+      <li><a href="../PAG-PROJ/projetos.html" class="rodape-letras">PROJETOS</a></li>
+      <li><a href="quem-somos.html" class="rodape-letras">QUEM SOMOS?</a></li>
+      <li><a href="../PAG-ORCA/orcamento.html" class="rodape-letras">ORÇAMENTO</a></li>
+    </ul>
+  </nav>
+
+  <!-- Coluna 3: Contatos e redes -->
+  <div>
+    <h4 class="title2">CONTATOS</h4>
+    <h6 class="number">(81) 99488-0458</h6>
+    <div class="icones-redes">
+      <!-- insta -->
+      <a href="https://www.instagram.com/netosengenharia" target="_blank">
+        <img src="./imagens/insta - Copia - Copia.png" alt="Instagram" class="footer-img">
+      </a>
+      <!-- face -->
+      <a href="https://www.facebook.com/netosengenharia?locale=pt_BR" target="_blank">
+        <img src="./imagens/face - Copia.png" alt="Facebook" class="footer-img2">
+      </a>
+    </div>
+  </div>
+
+  <!-- icone zap fixo -->
+  <a href="https://w.app/netos-engenharia" target="_blank">
+    <img src="./imagens/zap - Copia.png" alt="Ícone do WhatsApp" class="footer-zap">
+  </a>
+
+</footer>
+  <script>
+  function toggleMenu() {
+    const menu = document.querySelector(".menu ul");
+    menu.classList.toggle("active");
+  }
+</script>
+</body>
+</html>
